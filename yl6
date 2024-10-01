@@ -1,0 +1,11 @@
+n1 =int(input("Anna esimene arv: "))
+n2 =int(input("Anna teine arv: "))
+n3 =int(input("Anna kolmas arv: "))
+
+min = max = n1
+
+if n2 > max and n2 > n3:
+    print("Maksimum on: ", n2)
+
+if n3 > max and n3 > n2:
+    print("Maksimum on: ", n3)

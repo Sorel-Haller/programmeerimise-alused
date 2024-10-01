@@ -1,0 +1,31 @@
+n1 = int(input("Anna esimene küljepikkus:"))
+n2 = int(input("Anna teine küljepikkus:"))
+n3 = int(input("Anna kolmas küljepikkus:"))
+
+if n1 == n2 and n1 == n3:
+    print("See on võrdkülgne kolmnurk")
+
+if n1 == n2 and n1 != n3:
+    print("See on võrdhaarne kolmnurk")
+
+if n2 == n3 and n1 != n3:
+    print("See on võrdhaarne kolmnurk")
+
+if n1 != n2 != n3:
+    print("See on erikülgne kolmnurk")
+
+
+
+min = max = n1
+
+if n2 > max and n2 > n3:
+    maksimum = n2
+
+if n3 > max and n3 > n2:
+    maksimum = n3
+
+if n2 < min and n2 < n3:
+    min1 = n2
+
+if n3 < min and n3 < n2:
+    min1 = n3

@@ -1,0 +1,8 @@
+n1 = int(input("Anna esimene arv: "))
+n2 = int(input("Anna teine arv: "))
+
+min = max = n1
+
+if n2 < min :
+    print("miinimum on: ",n2)
+else: print("miinimum on: ", n1)

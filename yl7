@@ -1,0 +1,5 @@
+arv = int(input("Anna üks arv: "))
+
+if (arv % 2) == 0:
+    print("See on paarisarv")
+else: print("See ei ole paarisarv")

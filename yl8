@@ -1,0 +1,6 @@
+n = int( input( "Anna positiivne täisarv: "))
+
+
+if (n % 4) == 0 and n % 100 != 0 or n % 400 == 0:
+    print("See on liigaasta")
+else: print("See  ei ole liigaasta")
