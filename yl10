@@ -1,0 +1,18 @@
+nimi = (input("Mis on sinu nimi? "))
+print ("Tere, " + nimi + "!")
+
+
+elukoht = (input("Mis on sinu elukoht? "))
+
+if elukoht.lower() == "Saaremaa" or elukoht.lower() == "saaremaa":
+    print("Saaremaa on üks koht")
+else: print("...")
+
+
+vanus = int(input("Mis on sinu vanus? : "))
+if vanus <= 17 :
+    print("Oled liiga noor, et autot juhtida!")
+if vanus == 18:
+    print ("Palju õnne täisealiseks saamise puhul!")
+if vanus > 18:
+    print("Võid autot juhtida!")
