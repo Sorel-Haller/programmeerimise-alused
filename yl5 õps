@@ -1,0 +1,75 @@
+#Koosta tõeväärtustabel kahele avaldisele
+# ujukomaarvA AND (B OR C)
+#(A  B) OR NOT(C AND A)
+
+# https://docs.google.com/spreadsheets/d/1sUFsE-bOm3isqKUGlIgjZWtdfqv7jDXp9lkch2pNCWc/edit?usp=sharing
+# https://beta.wikiversity.org/wiki/V%C3%B5rdlustehted_ja_loogikatehted
+
+A1 = A2 = A3 = A4 = 0
+A5 = A6 = A7 = A8 = 1 
+B1 = B2 = B5 = B6 = 0
+B3 = B4 = B7 = B8 = 1
+C1 = C3 = C5 =  C7 = 0
+C2 = C4 = C6 = C8 = 1
+
+if  B1 ==1 or C1 == 1:
+    k1 = 1
+if  B1 == 0 or C1 ==  0:
+    k1 = 0
+
+if A1 == 1 and  B1 == 1 or C1 ==  1:
+    l1 = 1
+if A1 == 0 and B1 == 0 or C1 ==  0:
+    l1 = 0
+
+if A1 ==  B1 :
+    m1 = 1
+if A1 != B1:
+    m1 = 0
+
+if A1 == 1 and C1 ==  1:
+    n1 = 1
+if A1 == 0 and C1 ==  0:
+    n1 = 0
+
+if n1 == 1:
+    o1 = 0
+else: o1 = 1
+
+if m1 == 1 or o1 == 1:
+    p1 = 1
+if m1 == 0 or o1 == 0:
+    p1 = 0
+#--------------------------
+if B2 ==1 or C2 ==1:
+    k2 =1
+else: k2 = 0
+
+if A2 ==1 and k2 ==1:
+    l2 =1
+else: l2 =0
+
+if A2 == B2:
+    m2 = 1
+else: m2 = 0
+
+if C2 == A2 == 1:
+    n2 = 1
+else: n2 = 0
+
+if n2 == 1:
+    o2 = 0
+else: o2 = 1
+
+if m2 == 1 or o2 ==1:
+    p2 = 1
+else: p2 = 0
+
+print("\nTõeväärtustabel:")
+print("---------------------------------------------------------------------------------------------------------")
+print("|   A   |   B   |   C   | B or C | A & (B/C) | A ~ B | C AND A | NOT(C AND A) | (A ~ B) OR NOT(C AND A) |")
+print("---------------------------------------------------------------------------------------------------------")
+print("|  ", A1 ,"  |  ",B1,"  |  ",C1,"  |   ",k1, "  |    ",l1,"    |  ",m1,"  |   ",n1,"   |      ",o1,"     |           ",p1,"           |")
+print("---------------------------------------------------------------------------------------------------------")
+print("|  ", A2 ,"  |  ",B2,"  |  ",C2,"  |   ",k2, "  |    ",l2,"    |  ",m2,"  |   ",n2,"   |      ",o2,"     |           ",p2,"           |")
+print("---------------------------------------------------------------------------------------------------------")

@@ -1,0 +1,11 @@
+# Leia muutuja abil etteantud tekstis olevate täishäälikute (a, e, i, o, u, õ, ä, ö, ü) arv. 
+text = "Kuressaare Ametikool"
+
+vowel = "aeiouõäöü"
+vowel_count = 0
+
+for letter in text.lower():
+    if letter in vowel:
+        vowel_count += 1
+
+print(vowel_count)

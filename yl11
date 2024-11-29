@@ -1,0 +1,23 @@
+#Kirjuta programm, mis küsib kasutajalt sisendina stringi.
+#Eemalda selle sisendi algusest ja lõpust tühikud.
+#String peab vastama tingimustele, et selles on vähemalt seitse sümbolit ja et sümbolite arv on paarituarvuline.
+#Väljasta selle stringi kolm keskmist sümbolit.
+#(stringi meetodid, list)
+
+
+sisend = input("Palun sisestage 7 sübolit: ")
+
+sisend = sisend.strip()
+
+if len(sisend) >= 7 and len(sisend) % 2 != 0:
+    keskmine = len(sisend) // 2
+    print( sisend [keskmine-1:keskmine+2])
+
+else:    
+    print("Sümbolite pikkus peab olema paarituarv")
+
+
+
+     
+        
+        

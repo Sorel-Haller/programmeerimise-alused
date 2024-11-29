@@ -1,0 +1,5 @@
+# Kirjuta programm, mis küsib kasutajalt failinime kujul “failinimi.ext” (ext - extension - faili laiend) 
+# ja prindib välja laiendi (“ext”). (str.split)
+
+failinimi = input("Palun sisestage faili nimi kujul 'failinimi.ext': ")
+print(failinimi.split(".") [-1])

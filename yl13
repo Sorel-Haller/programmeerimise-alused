@@ -1,0 +1,17 @@
+#Küsi kasutajalt lemmikloom. Väljasta selle muutuja esimene täht.
+#Koosta list, mis koosneb kolmest loomast.
+#Lisa selle listi lõppu kasutaja sisestatud lemmikloom.
+#Väljasta see lemmikloomade list.
+#Väljasta listi viimase elemendi viimane täht.
+#(sõne kui list, mitmemõõtmeline ilist - multi dimensional)
+
+
+lemmikloom=input("Lemmikloom: ")
+print(lemmikloom[0])
+
+list = ["jänes", "hobune", "madu"]
+
+list.append(lemmikloom)
+print(list)
+
+print("Viimane täht on: " , lemmikloom[-1])

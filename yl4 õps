@@ -1,0 +1,6 @@
+a = int(input("Sisesta a: "))
+b = int(input("Sisesta b: "))
+
+if a < b:
+    print ("Miinimum on" , a)
+else: print("Miinimum on", b)
